@@ -3,6 +3,7 @@ body{
     background-repeat: repeat;
 }
 main{
+    padding: 10px;
     padding-top: 150px;
     min-height: 0px;
 }
