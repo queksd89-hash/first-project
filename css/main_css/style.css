@@ -1,0 +1,162 @@
+body{
+    background-image: url(../../images/Backgrounds/Main_background/home_background-fon.png);
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 550px;
+}
+header{
+    background-color: rgba(100, 100, 100, 0.192);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    min-height: 80px;
+    padding-left: 10px;
+    z-index: 1;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.cafe_logo{
+    color: rgb(7, 20, 26);
+    font-size: 55px;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: rgb(7, 20, 26);
+    padding-right: 20px;
+    gap: 60px;
+}
+nav a{
+    color: rgb(7, 20, 26);
+}
+nav div{
+    transition: 0.2s ease-in-out;
+}
+nav div:hover{
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.247);
+}
+.main_tabs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main_tabs button{
+    border: 1px solid black;
+    border-radius: 30% 30% 200% 200%;
+    background-color: rgba(255, 183, 0, 0.76);
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 400px;
+    min-height: 60px;
+    transition: 0.3s ease-in-out;
+}
+.main_tabs button:hover{
+    transform: scale(1.04);
+    background-color: rgb(255, 183, 0);
+    cursor: pointer;
+}
+
+footer{
+    background-image: url(/images/Backgrounds/Footer_background/Footer_background3.png);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    min-height: 1000px;
+    padding: 10px;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgba(245, 245, 245, 0.795);
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 70%;
+    gap: 20px;
+}
+.details a{
+    color: rgba(245, 245, 245, 0.795);
+    font-family: sans-serif;
+}
+.details img{
+    width: 54px;
+    height: auto;
+}
+
+@media (max-width: 1279px) {
+    .cafe_logo{
+        font-size: 50px;
+    }
+}
+@media (max-width: 799px){
+    body{
+        background-image: url(/images/Backgrounds/Main_background/home_background-fon-telephone.png);
+        background-size: cover;
+    }
+    header{
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: auto;
+        gap: 15px;
+        text-align: center;
+    }
+    main{
+        padding: 0px;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .logo {
+        gap: 10px;
+    }
+    
+    ._cafe_logo {
+        font-size: 28px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: auto;
+        padding: 0px;
+        gap: 12px;
+    }
+    nav p {
+        font-size: 24px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .main_tabs{
+        width: 100%;
+        padding: 100px;
+    }
+    .main_tabs button{
+        width: 200px;
+    }
+
+    .details{
+        flex-direction: column;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,81 @@
+body{
+    background-image: none;
+    background-color: black;
+}
+main{
+    flex-direction: column;
+    padding: 0px;
+}
+header{
+    background-color: rgba(143, 143, 143, 0.486);
+}
+
+.cafe_image{
+    background-image: url(/images/about_us_images/about_us_cafe_background.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 900px;
+}
+main div{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+section{
+    padding: 50px;   
+}
+section p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: rgb(245, 245, 245);
+}
+.description_benefits{
+    padding: 100px;
+    width: 900px;
+    gap: 0px;
+}
+.address{
+    padding: 15px 15px 15px 70px;
+    background-color: rgba(255, 255, 255, 0.274);
+}
+
+.about_products{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 100px;
+}
+main img{
+    width: 900px;
+    border-radius: 30px;
+}
+
+.about_employee{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    gap: 100px;
+}
+
+@media (max-width: 799px) {
+    main div{
+        gap: 300px;
+    }
+    main p{
+        font-size: 15px;
+    }
+    main img{
+        width: 80%;
+    }
+    section{
+        flex-direction: column;
+    }
+    .description_benefits{
+        padding: 0px;
+        width: 200px;
+    }
+    .about_employee{
+        flex-direction: column-reverse;
+    }
+}
