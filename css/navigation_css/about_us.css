@@ -16,6 +16,7 @@ header{
     background-position: center;
     width: 100%;
     min-height: 900px;
+    border: none;
 }
 main div{
     display: flex;
@@ -23,7 +24,8 @@ main div{
     gap: 200px;
 }
 section{
-    padding: 50px;   
+    border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+    padding: 100px;   
 }
 section p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

@@ -16,6 +16,7 @@ main{
 }
 .news{
     display: flex;
+    justify-content: space-between;
     background-color: rgba(128, 128, 128, 0.438);
     padding: 15px;
     width: 1000px;
@@ -44,11 +45,21 @@ button{
 
 @media (max-width: 799px) {
     .news{
-        width: 400px;
+        width: 100%;
     } 
     .news img{
         margin: auto;
         width: 200px;
         height: 450px;
+    }
+    .news h1{
+        font-size: 28px;
+    }
+    .news_container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
